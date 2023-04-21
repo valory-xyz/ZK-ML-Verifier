@@ -1,0 +1,25 @@
+alphabet_in:
+- API_ERROR
+- BLOCK_RETRIEVAL_ERROR
+- DONE
+- NO_MAJORITY
+- ROUND_TIMEOUT
+default_start_state: SynchronizeDelegationsRound
+final_states:
+- FinishedProposalRound
+label: VerifierAbciApp
+start_states:
+- SynchronizeDelegationsRound
+states:
+- CollectActiveProposalsRound
+- FinishedProposalRound
+- SynchronizeDelegationsRound
+transition_func:
+    (CollectActiveProposalsRound, API_ERROR): CollectActiveProposalsRound
+    (CollectActiveProposalsRound, BLOCK_RETRIEVAL_ERROR): CollectActiveProposalsRound
+    (CollectActiveProposalsRound, DONE): FinishedProposalRound
+    (CollectActiveProposalsRound, NO_MAJORITY): CollectActiveProposalsRound
+    (CollectActiveProposalsRound, ROUND_TIMEOUT): CollectActiveProposalsRound
+    (SynchronizeDelegationsRound, DONE): CollectActiveProposalsRound
+    (SynchronizeDelegationsRound, NO_MAJORITY): SynchronizeDelegationsRound
+    (SynchronizeDelegationsRound, ROUND_TIMEOUT): SynchronizeDelegationsRound
