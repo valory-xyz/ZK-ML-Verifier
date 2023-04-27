@@ -1,15 +1,15 @@
 # Security Policy
 
-This document outlines security procedures and general policies for the `zkml` project.
+This document outlines security procedures and general policies for the `ZK-ML-Verifier` project.
 
 ## Supported Versions
 
 The following table shows which versions of `zkml` are currently being supported with security updates.
 
-| Version        | Supported          |
-|----------------|--------------------|
-| `0.1.0alpha`   | :white_check_mark: |
-| `< 0.1.0alpha` | :x:                |
+| Version | Supported          |
+|---------|--------------------|
+| `n/a`   | :white_check_mark: |
+| `n/a`   | :x:                |
 
 ## Reporting a Vulnerability
 
