@@ -1,19 +1,19 @@
 # Security Policy
 
-This document outlines security procedures and general policies for the `zkml` project.
+This document outlines security procedures and general policies for the `ZK-ML-Verifier` project.
 
 ## Supported Versions
 
-The following table shows which versions of `zkml` are currently being supported with security updates.
+The following table shows which versions of `ZK-ML-Verifier` are currently being supported with security updates.
 
-| Version        | Supported          |
-|----------------|--------------------|
-| `0.1.0alpha`   | :white_check_mark: |
-| `< 0.1.0alpha` | :x:                |
+| Version | Supported          |
+|---------|--------------------|
+| `n/a`   | :white_check_mark: |
+| `n/a`   | :x:                |
 
 ## Reporting a Vulnerability
 
-The `zkml` team and community take all security bugs in `zkml` seriously. Thank you for improving the security of `zkml`. We appreciate your efforts and responsible disclosure and will make every effort to acknowledge your contributions.
+The `ZK-ML-Verifier` team and community take all security bugs in `ZK-ML-Verifier` seriously. Thank you for improving the security of `ZK-ML-Verifier`. We appreciate your efforts and responsible disclosure and will make every effort to acknowledge your contributions.
 
 Report security bugs by emailing `info@valory.xyz`.
 

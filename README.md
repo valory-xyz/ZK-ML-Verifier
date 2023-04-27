@@ -1,6 +1,9 @@
-# zkml
+# ZK-ML-Verifier
 
-The ZKML is TODO
+The ZK-ML-Verifier is an Autonolas service which takes up the responsibility of verifying proofs for machine Learning 
+models' predictions, using the ZK-ML technique.
+
+You can learn more about it in [this twitter thread](https://twitter.com/autonolas/status/1650869783641083904).
 
 - Clone the repository:
 
@@ -38,25 +41,4 @@ The ZKML is TODO
 
 ### Testing service locally
 
-Ensure that the packages are hashed and configured:
-- `autonomy analyse service --public-id valory/zkml:0.1.0`
-- `autonomy hash all`
-- `autonomy packages lock`
-- `autonomy push-all --remote`
-
-Then run the following commands:
-1. `autonomy fetch valory/zkml:0.1.0 --service --local`
-2. `cd zkml/`
-3. `autonomy build-image`
-4. Create the agent's key:
-    ```bash
-    autonomy generate-key -n 1 ethereum
-    ```
-
-5. `autonomy deploy build keys.json -ltm`
-6. `autonomy deploy run --build-dir abci_build/`
-7. In a separate terminal: `docker logs abci0 -f`
-8. Test the service endpoints (in another terminal):
-     ```bash
-     TODO
-     ```
+This section is under construction as there is no service file implemented yet.

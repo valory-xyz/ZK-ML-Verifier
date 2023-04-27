@@ -1,1 +1,1 @@
-# Release History - `ZKML`
+# Release History - `ZK-ML-Verifier`
